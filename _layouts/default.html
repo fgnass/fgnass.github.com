@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="author" content="{{ site.author.name }}" />
+
+    <link href="/blog.atom" rel="alternate" title="{{ page.title }}" type="application/atom+xml">
+
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="/assets/default.css" type="text/css" />
+
+    <!-- Disqus -->
+    <link rel="stylesheet" href="/assets/disqus.css" type="text/css" />
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/assets/syntax.css" type="text/css" />
+
+</head>
+<body>
+
+  {% capture repo_url %}https://github.com/{{site.github}}/{{site.github}}.github.com{% endcapture %}
+
+  <div id="main">
+
+    <div id="header">
+    </div>
+
+    <div id="content">
+
+      <div class="content">
+        {{ content }}
+      </div>
+
+      <div class="sidebar">
+        <div id="rss">
+          <a href="/blog.atom">Subscribe to this Blog</a>
+        </div>
+
+        <div class="box">
+          <div class="inner">
+            This blog is a public <a href="{{ repo_url }}" target="_blank">GitHub repository</a>. If spot an error or a typo you can fork and edit the posts and send me a pull request. Just go to the post's detail page and click the edit button in the upper right corner.
+          </div>
+        </div>
+
+        <ul>
+          {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            <div>{{ post.date | date_to_string }}</div>
+          </li>
+          {% endfor %}
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="footer">
+  </div>
+
+  {% include analytics %}
+</body>
+</html>

@@ -1,7 +1,11 @@
-<html>
-<head>
-  <meta http-equiv="refresh" content="0;url=https://github.com/fgnass/">
-</head>
-<body>
-</body>
-</html>
+---
+layout: default
+---
+
+{% assign post = site.posts.first %}
+{% include post %}
+
+<div id="comments">
+  <a href="{{ post.url }}#disqus_thread" class="comments" data-disqus-identifier="{{ post.id }}"></a>
+  {% include disqus_count %}
+</div>

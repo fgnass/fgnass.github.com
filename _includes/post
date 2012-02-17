@@ -1,0 +1,16 @@
+{% if post %}
+  {% assign post_content = post.content %}
+{% else %}
+  {% assign post = page %}
+  {% assign post_content = content %}
+{% endif %}
+
+<h1>
+  <a href="{{ post.url }}">{{ post.title }}</a>
+</h1>
+<p class="meta">
+  <img src="http://www.gravatar.com/avatar/{{ site.author.gravatar }}?s=16" width="16">
+  <a class="author" href="http://github.com/{{ site.github }}">{{ site.github }}</a>
+  <a href="{{ post.url }}" class="date">{{ post.date | date_to_long_string }}</a>
+</p>
+{{ post_content }}
