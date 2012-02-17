@@ -4,8 +4,8 @@ layout: default
 
 {% capture repo_url %}https://github.com/{{site.github}}/{{site.github}}.github.com{% endcapture %}
 {% capture post_path %}{{ page.id | replace_first:'/','' | replace:'/', '-' }}.md{% endcapture %}
-{% capture edit_url %}{{ repo_url }}/edit/master/{{post_path}}{% endcapture %}
-{% capture history_url %}{{ repo_url }}/commits/master/{{post_path}}{% endcapture %}
+{% capture edit_url %}{{ repo_url }}/edit/master/_posts/{{post_path}}{% endcapture %}
+{% capture history_url %}{{ repo_url }}/commits/master/_posts/{{post_path}}{% endcapture %}
 
 <div id="actions">
   <a href="{{ history_url }}" class="minibutton">View History</a>
