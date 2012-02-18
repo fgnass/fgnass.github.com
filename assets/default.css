@@ -3,26 +3,6 @@ h1 {
   font-size: 1.9em;
 }
 
-.meta {
-  font-size: 1.3em;
-}
-.meta * {
-  vertical-align: middle;
-}
-.meta .date {
-  color: #ccc;
-}
-
-.meta .author {
-  color: #94BFEA;
-  font-weight: bold;
-}
-
-.meta img {
-  padding: 1px;
-  border: 1px solid #CCC;
-}
-
 a {
   color: #4183C4;
   text-decoration: none;
@@ -173,6 +153,26 @@ pre, code {
 
 /* */
 
+.content .meta {
+  font-size: 1.3em;
+}
+.content .meta * {
+  vertical-align: middle;
+}
+.content .meta .date {
+  color: #ccc;
+}
+
+.content .meta .author {
+  color: #94BFEA;
+  font-weight: bold;
+}
+
+.content .meta img {
+  padding: 1px;
+  border: 1px solid #CCC;
+}
+
 .content>:first-child {
   margin-top: 0!important;
 }
@@ -266,7 +266,9 @@ pre, code {
 }
 
 .content img {
-  max-width:100%;
+  padding: 1%;
+  border: 1px solid #DDD;
+  max-width:98%;
 }
 
 .content code,
