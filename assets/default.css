@@ -74,7 +74,7 @@ pre, code {
 }
 
 #header {
-  background: -webkit-linear-gradient(#FAFAFA,#EAEAEA);
+  background: linear-gradient(#FAFAFA,#EAEAEA);
   border-bottom: 1px solid #CACACA;
   box-shadow: 0 1px 0 rgba(255,255,255,0.4),0 0 10px rgba(0,0,0,0.1);
   height: 35px;
@@ -114,8 +114,6 @@ pre, code {
 .sidebar .box {
   padding: 3px;
   background: #EEE;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
   border-radius: 3px;
   display: block;
   margin-bottom: 2em;
@@ -162,7 +160,7 @@ pre, code {
   text-shadow: 1px 1px 0 white;
   border: 1px solid transparent;
   border-radius: 3px;
-  background: -webkit-linear-gradient(#F4F4F4,#ECECEC);
+  background: linear-gradient(#F4F4F4,#ECECEC);
 }
 .minibutton:hover {
   color: white;
@@ -170,7 +168,7 @@ pre, code {
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   border-color: #518CC6;
   border-bottom-color: #2A65A0;
-  background: -webkit-linear-gradient(#599BDC,#3072B3);
+  background: linear-gradient(#599BDC,#3072B3);
 }
 
 /* */

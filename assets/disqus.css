@@ -23,7 +23,7 @@
 }
 
 #dsq-content #dsq-comments .dsq-comment-header {
-  background: -webkit-linear-gradient(#FAFAFA,#EAEAEA);
+  background: linear-gradient(#FAFAFA,#EAEAEA);
   border: none;
   color: #666;
   border-bottom: 1px solid #CCC;
@@ -54,7 +54,7 @@
   font-family: Helvetica,arial,freesans,clean,sans-serif;
   font-size: 12px;
   padding: 8px 15px;
-  background: -webkit-linear-gradient(#8ADD6D,#60B044);
+  background: linear-gradient(#8ADD6D,#60B044);
   box-shadow: 0 1px 4px rgba(0,0,0,0.2);
   border-radius: 3px;
 }
