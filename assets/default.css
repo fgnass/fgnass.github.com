@@ -40,6 +40,7 @@ body > #main { height: auto; min-height: 100%; }
 #content {
   overflow: hidden;
   padding-bottom: 150px;
+  background: #fff;
 }
 
 body {
@@ -80,7 +81,7 @@ pre, code {
 .sidebar {
   float: right;
   width: 30%;
-  padding: 3em 10% 0 0;
+  padding: 3em 10% 3em 0;
 }
 
 .sidebar #rss {
@@ -305,3 +306,20 @@ pre, code {
   background-color:transparent;
   border:none;
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) {
+  body {
+    font-size: 13px;
+  }
+  .content,
+  .sidebar {
+    float: none;
+    width: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #actions {
+    right: 5%;
+  }
+}
+
