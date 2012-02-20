@@ -162,4 +162,4 @@ function prototype(ctor, superCtor, proto) {
 
 ##TL;DR
 
-The get/set operators are cool and `__proto__` is your friend. If you don't want to use it you can write a simple helper function to achive a similar result using standard ECMAScript features.
+The [get/set](#the_get_and_set_operators) operators are cool and `__proto__` [is your friend](#the_deprecated_nonstandard_way). If you don't want to use it you can write a simple [helper function](#a_standard_based_solution) to achive a similar result using standard ECMAScript features.
