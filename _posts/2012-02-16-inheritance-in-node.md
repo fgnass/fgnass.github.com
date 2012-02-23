@@ -97,7 +97,7 @@ function Foo() {
 Foo.prototype = {
   get boo() {
     return this._boo;
-  }
+  },
   set boo(value) {
     this._boo = value && (''+value).toUpperCase();
   }
