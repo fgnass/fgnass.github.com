@@ -75,12 +75,12 @@ pre, code {
 
 .content {
   float: left;
-  width: 45%;
+  width: 48%;
   padding: 2em 5% 0 10%;
 }
 .sidebar {
   float: right;
-  width: 30%;
+  width: 25%;
   padding: 3em 10% 3em 0;
 }
 
@@ -121,7 +121,8 @@ pre, code {
   padding: 0.5em 0;
 }
 .sidebar ul a {
-  font-size: 1.4em;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 .sidebar ul div {
   color: #888;
@@ -186,6 +187,7 @@ pre, code {
 
 .content .meta {
   font-size: 1.3em;
+  margin: -0.5em 0 1.5em 0;
 }
 .content .meta * {
   vertical-align: middle;
@@ -204,27 +206,19 @@ pre, code {
   border: 1px solid #CCC;
 }
 
-.content>:first-child {
-  margin-top: 0!important;
-}
-
-.content>:last-child {
-  margin-bottom: 0!important;
-}
-
 .content h1,.content h2,.content h3,.content h4,.content h5,.content h6 {
   font-weight: 700;
-  margin: 20px 0 10px;
+  margin: 1em 0 0.3em 0;
   padding: 0;
 }
 
 .content h1 {
   font-size: 2em;
-  color: #000;
+  color: #222;
 }
 .content h2 {
   font-size: 1.7em;
-  color: #000;
+  color: #222;
 }
 .content h3 {
   font-size:1.2em;
@@ -235,17 +229,6 @@ pre, code {
 .content h6 {
   color: #777;
   font-size: 1em;
-}
-
-.content>h2:first-child,.content>h1:first-child,.content>h1:first-child+h2 {
-  border: 0;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.content>h3:first-child,.content>h4:first-child,.content>h5:first-child,.content>h6:first-child {
-  margin-top: 0;
-  padding-top: 0;
 }
 
 .content ul,
@@ -335,6 +318,18 @@ pre, code {
 .content pre tt {
   background-color:transparent;
   border:none;
+}
+
+@media screen and (max-width: 1024px) {
+  .content {
+    width: 60%;
+    padding-left: 5%;
+    padding-right: 0;
+  }
+  .sidebar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), (max-width: 480px) {
