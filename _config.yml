@@ -10,3 +10,11 @@ author:
 
 disqus: fgnass
 analytics: 'UA-19036385-2'
+
+repos:
+  - name: spin.js
+    description: A spinning activity indicator
+  - name: domino
+    description: A fast DOM implementation for Node
+  - name: node-dev
+    description: Zero-conf Node.js reloading

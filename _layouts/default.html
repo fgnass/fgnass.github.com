@@ -45,6 +45,7 @@
           </div>
         </div>
 
+        <h2>Recent Posts</h2>
         <ul>
           {% for post in site.posts %}
           <li>
@@ -53,6 +54,16 @@
           </li>
           {% endfor %}
         </ul>
+
+        <div class="repos">
+          <h2>Featured Repositories</h2>
+          {% for repo in site.repos %}
+          <div>
+            <a href="http://github.com/{{ site.github }}/{{ repo.name }}">{{ repo.name }}</a>
+            <p>{{ repo.description }}</P>
+          </div>
+          {% endfor %}
+        </div>
 
       </div>
 

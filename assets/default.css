@@ -128,6 +128,36 @@ pre, code {
   font-size: 0.9em;
 }
 
+.sidebar h2 {
+  font-size: 1.2em;
+  color: #333;
+  margin: 0 0 1em 0;
+}
+
+.sidebar .repos {
+  margin-top: 2em;
+}
+.sidebar .repos div {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background: linear-gradient(#FAFAFA, #EFEFEF);
+  margin: 0 0 10px 0;
+}
+.sidebar .repos a {
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 6px 8px 6px 30px;
+  background: #fff url(repo.png) 8px center no-repeat;
+  border-bottom: 1px solid #ddd;
+}
+.sidebar .repos p {
+  margin: 0;
+  padding: 10px;
+  font-size: 0.9em;
+  color: #444;
+}
+
 .minibutton {
   display: inline-block;
   height: 21px;
