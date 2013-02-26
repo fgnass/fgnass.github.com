@@ -53,4 +53,6 @@ Under Windows this looks like this:
 
 ![Screenshot](/images/dns.jpg)
 
-
+If you spot an error please
+[create an issue](https://github.com/fgnass/fgnass.github.com/issues)
+or drop me a line on [twitter](http://twitter.com/fgnass).
