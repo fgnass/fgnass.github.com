@@ -4,8 +4,3 @@ layout: default
 
 {% assign post = site.posts.first %}
 {% include post %}
-
-<div id="comments">
-  <a href="{{ post.url }}#disqus_thread" class="comments" data-disqus-identifier="{{ post.id }}"></a>
-  {% include disqus_count %}
-</div>
